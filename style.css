@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1a1a1a;
+    padding: 15px;
+    z-index: 10;
+}
+
+.menu-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #1a1a1a;
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-section {
+    padding: 15px;
+}
+
+/* Menu Items */
+.menu-item {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    background: #292929;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.menu-item:hover {
+    background: #404040;
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.dropdown a:hover {
+    color: #1e90ff;
+}
+
+/* Main Content */
+.content {
+    margin-top: 80px;
+}
