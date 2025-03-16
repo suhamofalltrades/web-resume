@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suham</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <h1 class="title">Suham Dutta</h1>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+
+        <!-- Socials Section -->
+        <div class="menu-section">
+            <div class="menu-item" onclick="toggleDropdown('socialsDropdown')">Socials ⬇</div>
+            <div class="dropdown" id="socialsDropdown">
+                <a href="https://instagram.com/suhamofalltrades" target="_blank">Instagram</a>
+                <a href="https://github.com/suhamofalltrades" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="menu-section">
+            <div class="menu-item" onclick="toggleDropdown('contactDropdown')">Contact ⬇</div>
+            <div class="dropdown" id="contactDropdown">
+                <p>Email: <a href="mailto:me@suhamofalltrades.mywire.org">me@suhamofaltrades.mywire.org</a></p>
+                
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="menu-section">
+            <div class="menu-item" onclick="toggleDropdown('projectsDropdown')">Projects ⬇</div>
+            <div class="dropdown" id="projectsDropdown">
+                <a href="https://search.me.subdomain.example.com" target="_blank">Search Engine</a>
+                <a href="https://blog.subdomain.example.com" target="_blank">Blog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>About</h2>
+        <p>Hi I am Suham Dutta</p>
+        <p>Innovation • Curiosity • Exploration • Growth • Resilience • Freedom • Mastery</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
